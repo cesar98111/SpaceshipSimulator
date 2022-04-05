@@ -18,10 +18,11 @@ public class SpaceShip {
     public float speedUP(float aceleracion){
         this.aceleracion=aceleracion;
         for(int tiempo=0;tiempo<50;tiempo++){
-            VelocidadX=VelocidadY+this.aceleracion*tiempo;
+            VelocidadX=VelocidadX+this.aceleracion*tiempo;
         }
         return VelocidadX;
     }
+
     public String getNombre() {
         return nombre;
     }
