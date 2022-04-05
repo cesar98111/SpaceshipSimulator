@@ -15,6 +15,13 @@ public class SpaceShip {
         this.aceleracion = aceleracion;
     }
 
+    public float speedUP(float aceleracion){
+        this.aceleracion=aceleracion;
+        for(int tiempo=0;tiempo<50;tiempo++){
+            VelocidadX=VelocidadY+this.aceleracion*tiempo;
+        }
+        return VelocidadX;
+    }
     public String getNombre() {
         return nombre;
     }
@@ -86,4 +93,7 @@ public class SpaceShip {
     public void setDirecciónY(float direcciónY) {
         DirecciónY = direcciónY;
     }
+
+
+
 }
