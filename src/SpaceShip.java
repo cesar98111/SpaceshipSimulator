@@ -13,14 +13,17 @@ public class SpaceShip {
         this.nombre = nombre;
         this.matrículaGalactica = matrículaGalactica;
         this.aceleracion = aceleracion;
+        this.CoordenadaX=0;
+        this.CoordenadaY=0;
+        this.DirecciónX=1;
+        this.DirecciónY=1;
     }
 
-    public float speedUP(float aceleracion){
-        this.aceleracion=aceleracion;
-        for(int tiempo=0;tiempo<50;tiempo++){
-            VelocidadX=VelocidadX+this.aceleracion*tiempo;
-        }
-        return VelocidadX;
+    public void speedUP(float aceleracion){
+        VelocidadX=VelocidadX+aceleracion;
+        VelocidadY=VelocidadY+aceleracion;
+
+
     }
 
     public String getNombre() {
