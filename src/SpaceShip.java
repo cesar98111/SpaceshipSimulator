@@ -2,37 +2,41 @@ public class SpaceShip {
     private String nombre;
     private String matrículaGalactica;
     private float aceleracion;
-    private float VelocidadX;
-    private float VelocidadY;
-    private float CoordenadaX;
-    private float CoordenadaY;
-    private float DirecciónX;
-    private float DirecciónY;
+    private float velocidadX;
+    private float velocidadY;
+    private float coordenadaX;
+    private float coordenadaY;
+    private float direcciónX;
+    private float direcciónY;
 
     public SpaceShip(String nombre, String matrículaGalactica, float aceleracion) {
         this.nombre = nombre;
         this.matrículaGalactica = matrículaGalactica;
         this.aceleracion = aceleracion;
-        this.CoordenadaX = 0;
-        this.CoordenadaY = 0;
-        this.DirecciónX = 1;
-        this.DirecciónY = 1;
+        this.coordenadaX = 0;
+        this.coordenadaY = 0;
+        this.direcciónX = 1;
+        this.direcciónY = 1;
     }
 
     public void speedUP(){
-        VelocidadX += aceleracion;
-        VelocidadY += aceleracion;
+        velocidadX += aceleracion;
+        velocidadY += aceleracion;
 
-        CoordenadaX += VelocidadX;
-        CoordenadaY += VelocidadY;
+        coordenadaX += velocidadX;
+        coordenadaY += velocidadY;
     }
 
     public void brake(){
-        VelocidadX -= aceleracion;
-        VelocidadY -= aceleracion;
+        velocidadX -= aceleracion;
+        velocidadY -= aceleracion;
 
-        CoordenadaX -= VelocidadX;
-        CoordenadaY -= VelocidadY;
+        coordenadaX -= velocidadX;
+        coordenadaY -= velocidadY;
+    }
+    public void emergencyStop(){
+        velocidadY = 0;
+        velocidadX = 0;
     }
 
 
@@ -61,51 +65,51 @@ public class SpaceShip {
     }
 
     public float getVelocidadX() {
-        return VelocidadX;
+        return velocidadX;
     }
 
     public void setVelocidadX(float velocidadX) {
-        VelocidadX = velocidadX;
+        this.velocidadX = velocidadX;
     }
 
     public float getVelocidadY() {
-        return VelocidadY;
+        return velocidadY;
     }
 
     public void setVelocidadY(float velocidadY) {
-        VelocidadY = velocidadY;
+        this.velocidadY = velocidadY;
     }
 
     public float getCoordenadaX() {
-        return CoordenadaX;
+        return coordenadaX;
     }
 
     public void setCoordenadaX(float coordenadaX) {
-        CoordenadaX = coordenadaX;
+        this.coordenadaX = coordenadaX;
     }
 
     public float getCoordenadaY() {
-        return CoordenadaY;
+        return coordenadaY;
     }
 
     public void setCoordenadaY(float coordenadaY) {
-        CoordenadaY = coordenadaY;
+        this.coordenadaY = coordenadaY;
     }
 
     public float getDirecciónX() {
-        return DirecciónX;
+        return direcciónX;
     }
 
     public void setDirecciónX(float direcciónX) {
-        DirecciónX = direcciónX;
+        this.direcciónX = direcciónX;
     }
 
     public float getDirecciónY() {
-        return DirecciónY;
+        return direcciónY;
     }
 
     public void setDirecciónY(float direcciónY) {
-        DirecciónY = direcciónY;
+        this.direcciónY = direcciónY;
     }
 
 
