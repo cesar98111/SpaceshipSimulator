@@ -13,21 +13,26 @@ public class SpaceShip {
         this.nombre = nombre;
         this.matrículaGalactica = matrículaGalactica;
         this.aceleracion = aceleracion;
-        this.CoordenadaX=0;
-        this.CoordenadaY=0;
-        this.DirecciónX=1;
-        this.DirecciónY=1;
+        this.CoordenadaX = 0;
+        this.CoordenadaY = 0;
+        this.DirecciónX = 1;
+        this.DirecciónY = 1;
     }
 
-    public void speedUP(float aceleracion){
-        VelocidadX=VelocidadX+aceleracion;
-        VelocidadY=VelocidadY+aceleracion;
+    public void speedUP(){
+        VelocidadX += aceleracion;
+        VelocidadY += aceleracion;
+
+        CoordenadaX += VelocidadX;
+        CoordenadaY += VelocidadY;
     }
 
-    public void brake(float aceleracion){
-        VelocidadX=VelocidadX-aceleracion;
-        VelocidadY=VelocidadY-aceleracion;
+    public void brake(){
+        VelocidadX -= aceleracion;
+        VelocidadY -= aceleracion;
 
+        CoordenadaX -= VelocidadX;
+        CoordenadaY -= VelocidadY;
     }
 
 
