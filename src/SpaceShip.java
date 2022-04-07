@@ -22,9 +22,14 @@ public class SpaceShip {
     public void speedUP(float aceleracion){
         VelocidadX=VelocidadX+aceleracion;
         VelocidadY=VelocidadY+aceleracion;
+    }
 
+    public void brake(float aceleracion){
+        VelocidadX=VelocidadX-aceleracion;
+        VelocidadY=VelocidadY-aceleracion;
 
     }
+
 
     public String getNombre() {
         return nombre;
