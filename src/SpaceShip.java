@@ -25,6 +25,8 @@ public class SpaceShip {
 
         coordenadaX += velocidadX;
         coordenadaY += velocidadY;
+
+        //aumentar velocidad
     }
 
     public void brake(){
