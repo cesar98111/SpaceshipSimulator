@@ -116,8 +116,7 @@ public class SpaceShip {
 
     @Override
     public String toString() {
-        return
-             "       A   A   A\n"+
+        String nave=    "       A   A   A\n"+
             "      | | | | | |\n"+
         "    __| |_| |_| |___nnnnnn_____----____-===----- \n"+
       "___/--| |-| |-|_|---~~~-------~~~---\\==/~~\\.\n"+
@@ -125,6 +124,10 @@ public class SpaceShip {
       "---\\--| |-| |-|~|---___-------___---/==\\__/' \n"+
                "      | | | | | |\n"+
                 "      | | | | | |\n"+
-                "       V   V   V  "           ;
+                "       V   V   V  \n"+
+                "velocidad actual de la nave:"+" "+ velocidadX+ "" + " "+ velocidadY+"\n"+
+                "coordenadas actuales de la nave:"+" "+coordenadaX+" "+" "+coordenadaY;
+        return nave;
+
     }
 }
