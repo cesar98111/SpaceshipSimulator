@@ -15,5 +15,12 @@ public class Cargo extends SpaceShip{
         }
 
     }
+    public void unload(){
+        if(capacidadDeCarga>0) {
+            carga--;
+        }else{
+            System.out.println("el almasenamiento ya esta vacio");
+        }
+    }
 
 }
