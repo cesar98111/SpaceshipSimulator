@@ -33,8 +33,8 @@ public class SpaceShip {
         velocidadX -= aceleracion;
         velocidadY -= aceleracion;
 
-        coordenadaX -= velocidadX;
-        coordenadaY -= velocidadY;
+        coordenadaX += velocidadX;
+        coordenadaY += velocidadY;
     }
     public void emergencyStop(){
         velocidadY = 0;
