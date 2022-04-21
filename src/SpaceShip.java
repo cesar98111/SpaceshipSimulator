@@ -2,10 +2,10 @@ public class SpaceShip {
     private String nombre;
     private String matrículaGalactica;
     private float aceleracion;
-    private float velocidadX;
-    private float velocidadY;
-    private float coordenadaX;
-    private float coordenadaY;
+    protected float velocidadX;
+    protected float velocidadY;
+    protected float coordenadaX;
+    protected float coordenadaY;
     private float direcciónX;
     private float direcciónY;
 

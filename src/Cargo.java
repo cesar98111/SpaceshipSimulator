@@ -23,4 +23,19 @@ public class Cargo extends SpaceShip{
         }
     }
 
+    @Override
+    public String toString() {
+        return "\n" +
+                "                  __|__\n" +
+                "                   _|_\n" +
+                "                  / _ \\\n" +
+                "               __/ (_) \\__\n" +
+                "          ____/_ ======= _\\____\n" +
+                " ________/ _ \\(_)_______(_)/ _ \\________\n" +
+                "<___+____ (_) | /   _   \\ | (_) ____+___>\n" +
+                "  O O O  \\___/ |   (_)   | \\___/  O O O\n" +
+                "             \\__\\_______/__/ \n"+
+                "velocidad actual de la nave:"+" "+ velocidadX+ "" + " "+ velocidadY+"\n"+
+                "coordenadas actuales de la nave:"+" "+coordenadaX+" "+" "+coordenadaY;
+    }
 }
