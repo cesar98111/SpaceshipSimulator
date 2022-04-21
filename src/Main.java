@@ -10,6 +10,8 @@ public class Main {
         System.out.println("creando nave espacial");
         SpaceShip naveEspacial=new SpaceShip("Eclipse","4353S34243DF",5);
         while(salida==1){
+            opcion=scan.nextInt();
+            scan.nextLine();
             switch (opcion){
                 case 0:
                     System.out.println("acelerando");
